@@ -33,7 +33,7 @@ services:
         - "traefik.enable=true"
         - "traefik.port=9000"
         - "traefik.docker.network=web"
-        - "traefik.frontend.rule=Host:portainer.loidoltdesign.com" 
+        - "traefik.frontend.rule=Host:swarm.loidoltdesign.com" 
 
 networks:
   agent_network:
