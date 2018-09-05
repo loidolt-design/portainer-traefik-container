@@ -20,7 +20,7 @@ services:
     image: portainer/portainer
     command: -H tcp://tasks.agent:9001 --tlsskipverify
     volumes:
-      - portainer_data:/data
+      - /swarm/volumes/portainer:/data
     networks:
       - agent_network
       - web
@@ -41,6 +41,3 @@ networks:
     attachable: true
   web:
     external: true
-
-volumes:
-  portainer_data:
